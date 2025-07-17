@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coco Nails Studio</title>
+  <link rel="icon" href="../assets/img/peine.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../Css/Index.css" />
+  <script src="../Js/buscador.js" defer></script>
+  <script src="../Js/Comentarios.js" defer></script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <img src="../assets/img/Logo.PNG" alt="Logo Coco Nails Studio" class="logo" />
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Bienvenida -->
+    <section id="inicio" class="hero">
+      <h1>Bienvenida a Coco Nails Studio</h1>
+      <p>Especialistas en uñas, pestañas, cuidado capilar y formación profesional.</p>
+      <img src="../assets/img/image1.PNG" alt="Salón de belleza" class="hero-img" />
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="section">
+  <h2>🛍️ Productos Destacados</h2>
+  <input type="text" id="buscador" placeholder="Buscar productos..." />
+  <div class="productos" id="lista-productos">
+    <div class="producto">
+      <img src="../assets/img/image4.PNG" alt="Gel UV Profesional" />
+      <p>Gel UV Profesional</p>
+    </div>
+    <div class="producto">
+      <img src="../assets/img/image5.PNG" alt="Removedor de esmalte" />
+      <p>Removedor de esmalte</p>
+    </div>
+    <div class="producto">
+      <img src="../assets/img/image6.PNG" alt="Kit extensiones de pestañas" />
+      <p>Kit extensiones de pestañas</p>
+    </div>
+    <div class="producto">
+      <img src="../assets/img/image2.PNG" alt="Cepillo para cejas" />
+      <p>Cepillo para cejas</p>
+    </div>
+    <div class="producto">
+      <img src="../assets/img/image3.PNG" alt="Aceite fortalecedor de uñas" />
+      <p>Aceite fortalecedor de uñas</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards">
+        <div class="card"><img src="../assets/img/image2.PNG" alt="Uñas" /><h3>Uñas</h3></div>
+        <div class="card"><img src="../assets/img/image3.PNG" alt="Pestañas" /><h3>Pestañas</h3></div>
+        <div class="card"><img src="../assets/img/image4.PNG" alt="Cuidado capilar" /><h3>Cuidado Capilar</h3></div>
+        <div class="card"><img src="../assets/img/image5.PNG" alt="Depilación" /><h3>Depilación</h3></div>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="section">
+      <h2>Resultados</h2>
+      <div class="carousel">
+        <img src="../assets/img/image2.PNG" class="active" />
+        <img src="../assets/img/image3.PNG" />
+        <img src="../assets/img/image6.PNG" />
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section id="opiniones" class="section">
+      <h2>Lo que dicen nuestras clientas</h2>
+      <div class="testimonial">
+        <img src="../assets/img/avatar1.PNG" />
+        <p>“¡Me encantaron mis cejas nuevas!” – <strong>Camila R.</strong></p>
+      </div>
+      <div class="testimonial">
+        <img src="../assets/img/avatar2.PNG" />
+        <p>“Los cursos son excelentes, aprendí muchísimo.” – <strong>Andrea M.</strong></p>
+      </div>
+      
+    </section>
+
+    <section class="section" id="comentarios">
+  <h2>📝 Deja tu comentario</h2>
+  <form id="form-comentario">
+    <input type="text" id="nombre" placeholder="Tu nombre" required />
+    <textarea id="mensaje" placeholder="Escribe tu opinión..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="lista-comentarios" class="comentarios"></div>
+</section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto">
+      <h2>Contáctanos</h2>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/CocoNailsStudio_C" target="_blank">@CocoNailsStudio_C</a></p>
+      <p><strong>Ubicación:</strong> Cra 24 #23a-11, Duitama - Boyacá</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Coco Nails Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/573001112233" class="whatsapp-btn" target="_blank" title="WhatsApp">
+    <img src="../assets/img/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Script Carrusel -->
+  <script>
+    const images = document.querySelectorAll(".carousel img");
+    let current = 0;
+    setInterval(() => {
+      images[current].classList.remove("active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("active");
+    }, 3000);
+  </script>
+</body>
+</html>

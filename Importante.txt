@@ -1,0 +1,27 @@
+Usar un servidor local con VS Code (más recomendado para abrirlo)
+Requisitos:
+Visual Studio Code
+
+La extensión llamada Live Server
+
+Pasos:
+1. Abre Visual Studio Code.
+
+2. Abre la carpeta completa del proyecto (SALON DE BELLEZA).
+
+3. Instala la extensión Live Server:
+
+4. Ve a la pestaña de extensiones (icono de cuadrado en la barra lateral izquierda).
+
+5 .Busca "Live Server" e instálala (autor: Ritwick Dey).
+
+6. Abre tu archivo HTML (por ejemplo, servicios.html) en el editor.
+
+7. Haz clic derecho sobre el HTML y selecciona “Open with Live Server”.
+
+8. O bien haz clic en el botón “Go Live” en la esquina inferior derecha.
+
+Se abrirá en tu navegador con una dirección como:
+http://127.0.0.1:5500/Html/servicios.html
+
+Con Live Server, se recarga automáticamente cuando guardas cambios.
